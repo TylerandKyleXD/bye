@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cya later alligator</title>
+</head>
+<body>
+    <button onclick="openIframe()">achieve spiritual enlightment</button>
+
+    <script>
+        function openIframe() {
+            let newWin = window.open("about:blank");
+            let iframe = newWin.document.createElement("iframe");
+            iframe.src = "https://binchodien.adaptor.cl";
+            iframe.style.width = "100%";
+            iframe.style.height = "100vh";
+            iframe.style.border = "none";
+
+            newWin.document.body.style.margin = "0";
+            newWin.document.body.appendChild(iframe);
+
+            window.location.replace("https://www.google.com");
+        }
+    </script>
+</body>
+</html>
