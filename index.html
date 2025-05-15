@@ -11,6 +11,10 @@
     <script>
         function openIframe() {
             let newWin = window.open("about:blank");
+            newWin.document.title = "meaning of life - Google Search"
+            link.rel = "icon";
+            link.href = "https://www.google.com/favicon.ico";
+            
             let iframe = newWin.document.createElement("iframe");
             iframe.src = "https://binchodien.adaptor.cl";
             iframe.style.width = "100%";
