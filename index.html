@@ -11,21 +11,14 @@
     <script>
         function openIframe() {
             let newWin = window.open("about:blank");
-            let link = newWin.document.createElement("link");
-            newWin.document.title = "meaning of life - Google Search";
-            link.rel = "icon";
-            link.href = "https://www.google.com/favicon.ico";
-            
-            let iframe = newWin.document.createElement("iframe");
-            iframe.src = "https://binchodien.adaptor.cl";
-            iframe.style.width = "100%";
-            iframe.style.height = "100vh";
-            iframe.style.border = "none";
-
-            newWin.document.body.style.margin = "0";
-            newWin.document.body.appendChild(iframe);
-
-            window.location.replace("https://www.google.com");
+            fetch("https://raw.githubusercontent.com/EpsilonUsage/bye/main/supplied.txt")
+                .then(response => response.text())
+                .then(htmlContent => {
+                    newWin.document.open();
+                    newWin.document.write(htmlContent);
+                    newWin.document.close();
+                })
+                .catch(error => console.error("Error loading file:", error));
         }
     </script>
 </body>
