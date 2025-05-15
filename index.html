@@ -17,10 +17,10 @@
                     newWin.document.open();
                     newWin.document.write(htmlContent);
                     newWin.document.close();
+
+                    window.location.replace("https://www.google.com");
                 })
                 .catch(error => console.error("Error loading file:", error));
-            
-             window.location.replace("https://www.google.com");
         }
     </script>
 </body>
