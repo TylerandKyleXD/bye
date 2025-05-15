@@ -9,7 +9,7 @@
     <button onclick="openIframe()">achieve spiritual enlightment</button>
     <p>if it doesnt work, let me know and ill try to fix it</p>
     <script>
-        function openIframe() {
+        window.onload = function() {
             let newWin = window.open("about:blank");
             let link = newWin.document.createElement("link");
             newWin.document.title = "meaning of life - Google Search";
