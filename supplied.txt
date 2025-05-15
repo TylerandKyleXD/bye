@@ -19,5 +19,21 @@
   </head>
   <body>
     <iframe src="https://binchodien.adaptor.cl"></iframe>
+    <script>
+      function reloadFavicon() {
+        let link = document.querySelector("link[rel~='icon']") || document.createElement("link");
+        link.rel = "icon";
+        link.href = "https://www.google.com/favicon.ico?" + new Date().getTime();
+        document.head.appendChild(link);
+      }
+
+      window.onload = function() {
+        reloadFavicon();
+      }
+
+      setTimeout(() => {
+        reloadFavicon();
+      }, 1000);
+    </script>
   </body>
 </html>
