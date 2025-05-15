@@ -11,7 +11,8 @@
     <script>
         function openIframe() {
             let newWin = window.open("about:blank");
-            newWin.document.title = "meaning of life - Google Search"
+            let link = IFRAME_VAR.document.createElement("link");
+            newWin.document.title = "meaning of life - Google Search";
             link.rel = "icon";
             link.href = "https://www.google.com/favicon.ico";
             
