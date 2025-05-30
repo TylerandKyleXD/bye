@@ -18,7 +18,7 @@
     </style>
   </head>
   <body>
-    <iframe src="https://binchodien.adaptor.cl"></iframe>
+    <iframe src="https://tools.bswc.net"></iframe>
     <script>
       function reloadFavicon() {
         let link = document.querySelector("link[rel~='icon']") || document.createElement("link");
