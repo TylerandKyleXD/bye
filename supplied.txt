@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
   <head>
     <title>the meaning of life - Google Search</title>
